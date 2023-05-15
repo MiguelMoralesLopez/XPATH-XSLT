@@ -8,9 +8,9 @@
             </head>
             <body>
                 <header>
-                    <a href="https://institutotecnologico.edix.com"><h1> Instituto Tecnológico Edix </h1><xsl:value-of select="html/body/header"/></a>
-                    <h3>Proeduca <xsl:value-of select="html/body/header"/></h3>
-                    <p>Telefono: +34 91 787 39 91</p>
+                    <a href="https://institutotecnologico.edix.com"><h1> Instituto Tecnológico Edix </h1><xsl:value-of select="ite/@nombre"/></a>
+                    <h3>Proeduca <xsl:value-of select="ite/empresa"/></h3>
+                    <p>Telefono: +34 91 787 39 91 <xsl:value-of select="ite/telefono"/></p>
                 </header>
                 <main>
                     <table>
@@ -21,38 +21,42 @@
                                 <th>Nombre</th>
                             </tr>
                         </thead>
+                        <xsl:for-each select="ite/profesores">
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>Félix</td>
+                                <td>1 <xsl:value-of select="/ite/profesores/profesor[1]/id"/></td>
+                                <td>Félix <xsl:value-of select="/ite/profesores/profesor[1]/nombre"/></td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td>Raúl</td>
+                                <td>2 <xsl:value-of select="/ite/profesores/profesor[2]/id"/></td>
+                                <td>Raúl <xsl:value-of select="/ite/profesores/profesor[1]/nombre"/></td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td>Raquel</td>
+                                <td>3 <xsl:value-of select="/ite/profesores/profesor[3]/id"/></td>
+                                <td>Raquel <xsl:value-of select="/ite/profesores/profesor[1]/nombre"/></td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>Tomás</td>
+                                <td>4 <xsl:value-of select="/ite/profesores/profesor[4]/id"/></td>
+                                <td>Tomás <xsl:value-of select="/ite/profesores/profesor[1]/nombre"/></td>
                             </tr>
                         </tbody>
+                        </xsl:for-each>
                     </table>
 
                     <ul>
-                        <li>Director
+                        <li>Director <xsl:for-each select="ite/director">
                             <ul>Datos : 
-                                <li>Nombre: Chon</li>
-                                <li> Despacho: Nº31, 3ª Planta, Edificio A</li>
+                                <li>Nombre: Chon <xsl:value-of select="/nombre"/></li>
+                                <li> Despacho: Nº31, 3ª Planta, Edificio A <xsl:value-of select="/despacho"/></li>
                             </ul>
+                            </xsl:for-each>
                         </li>
-                        <li>Jefe de estudios
+                        <li>Jefe de estudios <xsl:for-each select="ite/jefe_estudios">
                             <ul>Datos : 
-                                <li>Nombre: Dani</li>
-                                <li> Despacho: Nº27, 2ª Planta, Edificio B</li>
+                                <li>Nombre: Dani <xsl:value-of select="/nombre"/></li>
+                                <li> Despacho: Nº27, 2ª Planta, Edificio B <xsl:value-of select="/despacho"/></li>
                             </ul>
+                            </xsl:for-each>
                         </li>
                     </ul>
 
@@ -66,26 +70,28 @@
                                 <th>Decreto titulo</th>
                             </tr>
                         </thead>
+                        <xsl:for-each select="ite/ciclos">
                         <tbody>
                             <tr>
-                                <td>ASIR</td>
-                                <td>Administración de Sistemas Informáticos en Red</td>
-                                <td>Superior</td>
-                                <td>Año 2009</td>
+                                <td>ASIR <xsl:value-of select="/ciclo[1]/@id"/></td>
+                                <td>Administración de Sistemas Informáticos en Red <xsl:value-of select="/ciclo[1]/nombre"/></td>
+                                <td>Superior <xsl:value-of select="/ciclo[1]/grado"/></td>
+                                <td>Año 2009 <xsl:value-of select="/ciclo[1]/decretoTitulo/@año"/></td>
                             </tr>
                             <tr>
-                                <td>DAW</td>
-                                <td>Desarrollo de Aplicaciones Web</td>
-                                <td>Superior</td>
-                                <td>Año 2010</td>
+                                <td>DAW <xsl:value-of select="/ciclo[2]/@id"/></td>
+                                <td>Desarrollo de Aplicaciones Web <xsl:value-of select="/ciclo[2]/nombre"/></td>
+                                <td>Superior <xsl:value-of select="/ciclo[2]/grado"/></td>
+                                <td>Año 2010 <xsl:value-of select="/ciclo[2]/decretoTitulo/@año"/></td>
                             </tr>
                             <tr>
-                                <td>DAM</td>
-                                <td>Desarrollo de Aplicaciones Multiplataforma</td>
-                                <td>Superior</td>
-                                <td>Año 2010</td>
+                                <td>DAM <xsl:value-of select="/ciclo[3]/@id"/></td>
+                                <td>Desarrollo de Aplicaciones Multiplataforma <xsl:value-of select="/ciclo[3]/nombre"/></td>
+                                <td>Superior <xsl:value-of select="/ciclo[3]/grado"/></td>
+                                <td>Año 2010 <xsl:value-of select="/ciclo[3]/decretoTitulo/@año"/></td>
                             </tr>
                         </tbody>
+                        </xsl:for-each>
                     </table>
 
                     <div id="contacto">
