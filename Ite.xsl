@@ -98,23 +98,21 @@
                         <h2> Contacto </h2>
                         <form action="Contactar.jsp" method="get">
                             <label for="nombre">Nombre :</label>
-                            <input id="input_form" type="text" name="nombre" placeholder="Introduce tu nombre" required autofocus />
-                            </br> </br>
+                            <input id="input_form" type="text" name="nombre" placeholder="Introduce tu nombre" />
+  
                             <label for="apellidos">Apellidos :</label>
-                            <input id="input_form" type="text" name="apellidos" placeholder="Introduce tus apellidos" required />
-                            </br> </br>
+                            <input id="input_form" type="text" name="apellidos" placeholder="Introduce tus apellidos"/>
+
                             <label for="telefono">Teléfono :</label>
                             <input id="input_form" type="tel" name="telefono" placeholder="Teléfono" />
-                            </br> </br>
+
                             <label for="email">Email :</label>
-                            <input id="input_form" type="text" name="email" placeholder="Introduce tu Email" required />
-                            </br> </br>
+                            <input id="input_form" type="text" name="email" placeholder="Introduce tu Email"/>
+ 
                             <label for="mensaje">Mensaje :</label>
-                            </br> <textarea id="input_form" rows="8" cols="60" name="observaciones"
-                                placeholder="Contenido del mensaje "></textarea>
-                            </br> </br>
+                            <textarea id="input_form" rows="8" cols="60" name="observaciones" placeholder="Contenido del mensaje "></textarea>
+
                             <input class="boton_enviar" type="submit" value="Enviar" />
-                            </br> </br>
                         </form>
                     </div>
                 </main>
