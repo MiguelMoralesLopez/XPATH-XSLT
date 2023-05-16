@@ -2,9 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
-    <edix> <a href="https://institutotecnologico.edix.com"><xsl:value-of select="ite/@nombre"/> junto a <xsl:value-of select="ite/empresa"/> </a>
-        <telefono>Telefono : <xsl:value-of select="ite/telefono"/></telefono>
-        <xsl:for-each select="/ite/profesores">
+    <edix> <a href="https://institutotecnologico.edix.com"><xsl:value-of select="ite2/@nombre"/> junto a <xsl:value-of select="ite2/empresa"/> </a>
+        <telefono>Telefono : <xsl:value-of select="ite2/telefono"/></telefono>
+        <xsl:for-each select="/ite2/profesores">
         <profesores>
             <profesor>
                 <codigo_profesor><xsl:value-of select="profesor[1]/id"/></codigo_profesor>
@@ -24,19 +24,19 @@
             </profesor>
         </profesores>
         </xsl:for-each>
-        <xsl:for-each select="/ite/director">
+        <xsl:for-each select="/ite2/director">
         <director>
             <nombre_director><xsl:value-of select="nombre"/></nombre_director>
             <despacho_director><xsl:value-of select="despacho"/></despacho_director>
         </director>
         </xsl:for-each>
-        <xsl:for-each select="/ite/jefe_estudios">
+        <xsl:for-each select="/ite2/jefe_estudios">
         <jefe_estudios>
             <nombre_jefe><xsl:value-of select="nombre"/></nombre_jefe>
             <despacho_jefe><xsl:value-of select="despacho"/></despacho_jefe>
         </jefe_estudios>
         </xsl:for-each>
-        <xsl:for-each select="/ite/ciclos">
+        <xsl:for-each select="/ite2/ciclos">
         <ciclos>
             <ciclo>
                 <codigo_ciclo><xsl:value-of select="ciclo[1]/@id"/></codigo_ciclo>
