@@ -1,1 +1,92 @@
-/* CSS para el xml del ejercicio */
+/* CSS para el html del ejercicio */
+
+/* General*/
+body{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 85%;
+    margin: auto;
+}
+
+/* Selectores */
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    color: rgb(37, 13, 92);
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(37, 13, 92);
+    line-height: 0px;
+}
+
+h3{
+    font-family:  Geneva, Verdana, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(80, 12, 88);
+    text-shadow: 2px 3px 2px rgb(90, 129, 173);
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    word-spacing: -3px;
+    color: rgb(73, 36, 161);
+}
+
+
+/* Etiquetas */
+
+table{
+   width: 50%;
+}
+
+table th{
+    border: 2px solid rgb(63, 56, 153);
+    padding: 5px;
+    text-align: center;
+}
+
+table td{
+    border: 1px solid rgb(63, 56, 153);
+    padding: 5px;
+    text-align: center;
+}
+
+table h3{
+    text-align: center;
+}
+
+ul{
+    width: 46%;
+    border-bottom: 1px dotted white;
+    border-top: 1px dotted white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul li{
+    font-weight: 600;
+    font-size: 18px;
+    list-style: none;
+}
+
+ul:first-child{
+    color:rgb(71, 31, 83);
+}
+
+ul li ul::first-line{
+    text-decoration: underline;
+}
+
+ul li ul li{
+    list-style: square;
+}
+

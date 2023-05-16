@@ -4,13 +4,13 @@
         <html>
             <head>
                 <title>Ejercicio 3</title>
-                <linkl rel="stylesheet" href="CSS/Ite.css" />
+                <link rel="stylesheet" href="CSS/Ite.css" />
             </head>
             <body>
                 <header>
                     <a href="https://institutotecnologico.edix.com"><h1><xsl:value-of select="ite/@nombre"/></h1></a>
                     <h2><xsl:value-of select="ite/empresa"/></h2>
-                    <p>Telefono : <xsl:value-of select="ite/telefono"/></p>
+                    <p><xsl:value-of select="ite/telefono"/></p>
                 </header>
                 <main>
                     <table>
