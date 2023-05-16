@@ -42,6 +42,7 @@
                         </tbody>
                         </xsl:for-each>
                     </table>
+                    <section>
                     <ul>
                         <li>Director <xsl:for-each select="/ite/director">
                             <ul>Datos : 
@@ -58,9 +59,10 @@
                             </xsl:for-each>
                         </li>
                     </ul> 
-                    <table>
+                    </section>
+                    <table id="t2">
                         <thead>
-                        <a href="https://www.edix.com/es/fp/"><caption><h3> Ciclos formativos </h3></caption></a>
+                        <a href="https://www.edix.com/es/fp/"><h3><caption> Ciclos formativos </caption></h3></a>
                             <tr>
                                 <th>Ciclo</th>
                                 <th>Nombre</th>
@@ -91,11 +93,12 @@
                         </tbody>
                         </xsl:for-each>
                     </table>
+                    <div id="clearboth"></div>
                     <form action="Contactar.jsp" method="get">
                         <legend><h3> Contacto </h3></legend>
                         <label for="nombre">Nombre :</label>
-                        <input type="text" name="nombre" placeholder="Introduce tu nombre" />
-  
+                        <input type="text" name="nombre" placeholder="Introduce tu nombre"/>
+                        
                         <label for="apellidos">Apellidos :</label>
                         <input type="text" name="apellidos" placeholder="Introduce tus apellidos"/>
 
@@ -108,7 +111,7 @@
                         <label for="mensaje">Mensaje :</label>
                         <textarea rows="8" cols="60" name="observaciones" placeholder="Contenido del mensaje "></textarea>
 
-                        <input class="boton_enviar" type="submit" value="Enviar" />
+                        <input id="enviar" class="boton_enviar" type="submit" value="Enviar" />
                     </form>
                 </main>
             </body>
