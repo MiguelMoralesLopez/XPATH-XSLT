@@ -112,6 +112,9 @@
                         <textarea rows="8" cols="60" name="observaciones" placeholder="Contenido del mensaje "></textarea>
 
                         <input id="enviar" class="boton_enviar" type="submit" value="Enviar" />
+                        
+                        <img src="img/edix.png" />
+                        <img src="img/proeduca.png" />
                     </form>
                 </main>
             </body>
