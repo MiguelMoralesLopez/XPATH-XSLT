@@ -109,9 +109,9 @@
                         <input type="text" name="email" placeholder="Introduce tu Email"/>
  
                         <label for="mensaje">Mensaje :</label>
-                        <textarea rows="8" cols="60" name="observaciones" placeholder="Contenido del mensaje "></textarea>
+                        <textarea rows="8" cols="60" name="mensaje" placeholder="Contenido del mensaje "></textarea>
 
-                        <input id="enviar" class="boton_enviar" type="submit" value="Enviar" />
+                        <input id="enviar" type="submit" value="Enviar" />
                         
                         <img src="img/edix.png" />
                         <img src="img/proeduca.png" />
