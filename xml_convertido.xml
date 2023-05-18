@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<edix>
+    <a href="https://institutotecnologico.edix.com">Instituto Tecnologico Edix junto a Proeduca</a>
+    <telefono>Telefono : +34 91 787 39 91</telefono>
+    <profesores>
+        <profesor>
+            <codigo_profesor>1</codigo_profesor>
+            <nombre_profesor>Felix</nombre_profesor>
+        </profesor>
+        <profesor>
+            <codigo_profesor>2</codigo_profesor>
+            <nombre_profesor>Raul</nombre_profesor>
+        </profesor>
+        <profesor>
+            <codigo_profesor>3</codigo_profesor>
+            <nombre_profesor>Raquel</nombre_profesor>
+        </profesor>
+        <profesor>
+            <codigo_profesor>4</codigo_profesor>
+            <nombre_profesor>Tomas</nombre_profesor>
+        </profesor>
+    </profesores>
+    <director>
+        <nombre_director>Chon</nombre_director>
+        <despacho_director>Numero 31, 3º Planta, Edificio A</despacho_director>
+    </director>
+    <jefe_estudios>
+        <nombre_jefe>Dani</nombre_jefe>
+        <despacho_jefe>Numero 27, 2º Planta, Edificio B</despacho_jefe>
+    </jefe_estudios>
+    <ciclos>
+        <ciclo>
+            <codigo_ciclo>ASIR</codigo_ciclo>
+            <nombre_grado>Administracion de Sistemas Informaticos en Red Grado Superior</nombre_grado>
+            <Titulo>
+                <año>2009</año>
+            </Titulo>
+        </ciclo>
+        <ciclo>
+            <codigo_ciclo>DAW</codigo_ciclo>
+            <nombre_grado>Desarrollo de Aplicaciones Web Grado Superior</nombre_grado>
+            <Titulo>
+                <año>2010</año>
+            </Titulo>
+        </ciclo>
+        <ciclo>
+            <codigo_ciclo>DAM</codigo_ciclo>
+            <nombre_grado>Desarrollo de Aplicaciones Multiplataforma Grado Superior</nombre_grado>
+            <Titulo>
+                <año>2010</año>
+            </Titulo>
+        </ciclo>
+    </ciclos>
+</edix>
