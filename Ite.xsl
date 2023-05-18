@@ -4,7 +4,7 @@
         <html>
             <head>
                 <title>Ejercicio 3</title>
-                <link rel="stykesheet" href="CSS/Ite.css" />
+                <link rel="stylesheet" href="CSS/Ite.css" />
             </head>
             <body>
                 <header>
@@ -12,6 +12,7 @@
                     <h3><xsl:value-of select="ite/empresa"/></h3>
                     <h6><xsl:value-of select="ite/telefono"/></h6>
                 </header>
+                <div class="separadorHorizontal"></div>
                 <main>
                     <section id="equipoDirectivo">
                         <table>
@@ -37,7 +38,7 @@
                             </tbody>
                         </table>
                     </section>
-
+                    <div class="separadorVertical"></div>
                     <section id="profesorado">
                         <table>
                             <caption><h3>Profesores</h3></caption>
@@ -69,7 +70,7 @@
                             </xsl:for-each>
                         </table>
                     </section>
-
+                    <div class="separadorHorizontal"></div>
                     <section id="ofertaEducativa">
                         <h3>Oferta Educativa</h3>
                         <xsl:for-each select="ite/ciclos">
@@ -105,21 +106,21 @@
                             </ol>
                         </xsl:for-each>
                     </section>
-
+                    <div class="separadorVertical"></div>
                     <section id="contacto">
                         <h3>Contacta con nosotros</h3>
                         <form action="Contactar.jsp" method="get">
                             <label for="nombre">Nombre :</label>
-                            <input type="text" name="nombre" placeholder="Introduce tu nombre"/>
+                            <input type="text" name="nombre" placeholder="Introduce tu nombre"/><br/>
                             <label for="apellidos">Apellidos :</label>
                             <input type="text" name="apellidos" placeholder="Introduce tus apellidos"/><br/>
                             <label for="telefono">Teléfono :</label> 
-                            <input type="tel" name="telefono" placeholder="Teléfono" />
+                            <input type="tel" name="telefono" placeholder="Teléfono" /><br/>
                             <label for="email">Email :</label>
                             <input type="text" name="email" placeholder="Introduce tu Email"/><br/>
-                            <label for="mensaje">Mensaje :</label>
-                            <textarea rows="8" cols="60" name="observaciones" placeholder="Contenido del mensaje "></textarea><br/>
-                            <input id="enviar" class="boton_enviar" type="submit" value="Enviar" />
+                            <label for="mensaje">Mensaje :</label><br/>
+                            <textarea name="observaciones" placeholder="Contenido del mensaje "></textarea><br/>
+                            <input id="enviar" type="submit" value="Enviar" />
                             <input type="reset"></input>
                     </form>
                     </section>                    

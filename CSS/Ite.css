@@ -1,1 +1,58 @@
-/* CSS para el xml del ejercicio */
+/* Estilos generales */
+body{
+    background: radial-gradient(circle, rgb(114, 92, 173) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Estilos por etiqueta */
+
+header{
+    text-align: center;
+}
+
+section{
+    
+    width:40%;
+    justify-items: center;
+}
+
+table {
+    margin-left: 35%;
+    border-style: double;
+    border-color: black;
+}
+
+table caption{
+    text-decoration:underline;
+}
+
+/* Estilos por clase */ 
+
+.separadorHorizontal{
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    clear: right;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.separadorVertical{
+    background-color: black;
+    width: 5px;
+    clear: right;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
