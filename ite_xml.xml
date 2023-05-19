@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
@@ -42,21 +42,21 @@
                 <id_ciclo><xsl:value-of select="ciclo[1]/@id"/></id_ciclo>
                 <grado><xsl:value-of select="ciclo[1]/nombre"/> Grado <xsl:value-of select="ciclo[1]/grado"/></grado>
                 <Decreto_Titulo>
-                    <año><xsl:value-of select="ciclo[1]/decretoTitulo/@año"/></año>
+                    <año><xsl:value-of select="ciclo[1]/decretoTitulo/@anno"/></año>
                 </Decreto_Titulo>
             </ciclo>
             <ciclo>
                 <id_ciclo><xsl:value-of select="ciclo[2]/@id"/></id_ciclo>
                 <grado><xsl:value-of select="ciclo[2]/nombre"/> Grado <xsl:value-of select="ciclo[2]/grado"/></grado>
                 <Decreto_Titulo>
-                    <año><xsl:value-of select="ciclo[2]/decretoTitulo/@año"/></año>
+                    <año><xsl:value-of select="ciclo[2]/decretoTitulo/@anno"/></año>
                 </Decreto_Titulo>
             </ciclo>
             <ciclo>
                 <id_ciclo><xsl:value-of select="ciclo[3]/@id"/></id_ciclo>
                 <grado><xsl:value-of select="ciclo[3]/nombre"/> Grado <xsl:value-of select="ciclo[3]/grado"/></grado>
                 <Decreto_Titulo>
-                    <año><xsl:value-of select="ciclo[3]/decretoTitulo/@año"/></año>
+                    <año><xsl:value-of select="ciclo[3]/decretoTitulo/@anno"/></año>
                 </Decreto_Titulo>
             </ciclo>
         </ciclos>
