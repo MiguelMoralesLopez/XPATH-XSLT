@@ -80,6 +80,15 @@ table td{
     font-size: 20px;
 }
 
+table caption{
+    font-family:  Geneva, Verdana, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    color: #184477;
+    text-shadow: 2px 2px 2px rgb(90, 129, 173);
+    text-align: left;
+    text-decoration: none;
+}
+
 section{
     float: right;
     width: 40%;
