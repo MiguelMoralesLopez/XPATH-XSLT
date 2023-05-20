@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
-    <edix> <a href="https://institutotecnologico.edix.com"><xsl:value-of select="ite2/@nombre"/> junto a <xsl:value-of select="ite2/empresa"/> </a>
+    <edix> <a href="{/ite2/@web}"><xsl:value-of select="ite2/@nombre"/> junto a <xsl:value-of select="ite2/empresa"/> </a>
         <telefono>Telefono : <xsl:value-of select="ite2/telefono"/></telefono>
         <xsl:for-each select="/ite2/profesores">
         <profesores>
