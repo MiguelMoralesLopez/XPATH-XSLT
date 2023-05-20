@@ -62,7 +62,7 @@
                     </section>
                     <table id="t2">
                         <thead>
-                        <a href="https://www.edix.com/es/fp/"><h3><caption> Ciclos formativos </caption></h3></a>
+                        <caption><a href="https://www.edix.com/es/fp/"><h3> Ciclos formativos</h3></a></caption>
                             <tr>
                                 <th>Ciclo</th>
                                 <th>Nombre</th>
