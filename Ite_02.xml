@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="ite_xml.xsl"?>
-<ite2 nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
+<?xml-stylesheet type="text/xsl" href="Ite_02.xsl"?>
+
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
     <empresa>Proeduca</empresa>
     <telefono>+34 91 787 39 91</telefono>
     <profesores>
@@ -46,4 +47,4 @@
             <decretoTitulo año="2010" />
         </ciclo>
     </ciclos>
-</ite2>
+</ite>
