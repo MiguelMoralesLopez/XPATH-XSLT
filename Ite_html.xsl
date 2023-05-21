@@ -107,6 +107,11 @@
 
                         <label for="email">Email :</label>
                         <input type="text" name="email" placeholder="Introduce tu Email"/>
+
+                        <label for="ciclo">¿En que ciclo estas interesado?</label>
+                        <input name="ciclo" type="radio" value="ASIR"/> ASIR
+                        <input name="ciclo" type="radio" value="DAW"/> DAW 
+                        <input name="ciclo" type="radio" value="DAM"/> DAM
  
                         <label for="mensaje">Mensaje :</label>
                         <textarea rows="8" cols="60" name="mensaje" placeholder="Contenido del mensaje "></textarea>
