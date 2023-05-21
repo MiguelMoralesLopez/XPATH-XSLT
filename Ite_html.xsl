@@ -43,22 +43,22 @@
                         </xsl:for-each>
                     </table>
                     <section>
-                    <ul>
-                        <li>Director <xsl:for-each select="/ite/director">
-                            <ul>Datos : 
-                                <li>Nombre: <xsl:value-of select="nombre"/></li>
-                                <li> Despacho: <xsl:value-of select="despacho"/></li>
-                            </ul>
-                            </xsl:for-each>
-                        </li>
-                        <li>Jefe de estudios <xsl:for-each select="/ite/jefe_estudios">
-                            <ul>Datos : 
-                                <li>Nombre: <xsl:value-of select="nombre"/></li>
-                                <li> Despacho: <xsl:value-of select="despacho"/></li>
-                            </ul>
-                            </xsl:for-each>
-                        </li>
-                    </ul> 
+                        <ul>
+                            <li>Director <xsl:for-each select="/ite/director">
+                                <ul>Datos : 
+                                    <li>Nombre: <xsl:value-of select="nombre"/></li>
+                                    <li> Despacho: <xsl:value-of select="despacho"/></li>
+                                </ul>
+                                </xsl:for-each>
+                            </li>
+                            <li>Jefe de estudios <xsl:for-each select="/ite/jefe_estudios">
+                                <ul>Datos : 
+                                    <li>Nombre: <xsl:value-of select="nombre"/></li>
+                                    <li> Despacho: <xsl:value-of select="despacho"/></li>
+                                </ul>
+                                </xsl:for-each>
+                            </li>
+                        </ul> 
                     </section>
                     <table id="t2">
                         <thead>
